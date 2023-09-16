@@ -44,6 +44,30 @@ namespace CRUD_SITEMA_ACADEMICO
         {
             FrmCadastroPeriodos frmCadastroPeriodos = new FrmCadastroPeriodos();
             frmCadastroPeriodos.ShowDialog();
+
+            this.Close();
+        }
+
+        private void cadastroDisciplina_Click(object sender, EventArgs e)
+        {
+            FrmCadastroDisciplinas frmDisciplinas = new FrmCadastroDisciplinas();
+            frmDisciplinas.ShowDialog();
+
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmDisciplinaECurso frmDisciplinaECurso = new FrmDisciplinaECurso();
+            frmDisciplinaECurso.ShowDialog();
+
+            this.Close();
+        }
+
+        private void cadastroCurso_Click(object sender, EventArgs e)
+        {
+            FrmCadastroCursos frmCadastroCursos = new FrmCadastroCursos();
+            frmCadastroCursos.ShowDialog();
         }
     }
 }

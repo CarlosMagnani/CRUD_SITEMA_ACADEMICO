@@ -37,8 +37,31 @@ namespace CRUD_SITEMA_ACADEMICO
 
         private void cadastrarCurso_Click(object sender, EventArgs e)
         {
-            FrmCadastroCursos frmCursos =  new FrmCadastroCursos();
+
+            this.Close();
+
+            FrmCadastroCursos frmCursos = new FrmCadastroCursos();
             frmCursos.ShowDialog();
+        }
+
+        private void Voltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+
+            FrmPrincipal frmPrincipal = Application.OpenForms["FrmPrincipal"] as FrmPrincipal;
+
+
+            if (frmPrincipal != null)
+            {
+                frmPrincipal.BringToFront();
+            }
+            else
+            {
+
+                frmPrincipal = new FrmPrincipal();
+                frmPrincipal.Show();
+            }
         }
     }
 }

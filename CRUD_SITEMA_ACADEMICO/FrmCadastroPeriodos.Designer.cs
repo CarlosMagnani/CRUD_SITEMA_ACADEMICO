@@ -34,11 +34,12 @@
             label1 = new Label();
             label2 = new Label();
             cadastrarCurso = new Button();
+            Voltar = new Button();
             SuspendLayout();
             // 
             // perNome
             // 
-            perNome.Location = new Point(58, 36);
+            perNome.Location = new Point(39, 36);
             perNome.Margin = new Padding(3, 4, 3, 4);
             perNome.Name = "perNome";
             perNome.Size = new Size(148, 27);
@@ -46,7 +47,7 @@
             // 
             // perSigla
             // 
-            perSigla.Location = new Point(58, 117);
+            perSigla.Location = new Point(236, 36);
             perSigla.Margin = new Padding(3, 4, 3, 4);
             perSigla.Name = "perSigla";
             perSigla.Size = new Size(148, 27);
@@ -54,7 +55,7 @@
             // 
             // salvarPeriodo
             // 
-            salvarPeriodo.Location = new Point(75, 163);
+            salvarPeriodo.Location = new Point(39, 102);
             salvarPeriodo.Margin = new Padding(3, 4, 3, 4);
             salvarPeriodo.Name = "salvarPeriodo";
             salvarPeriodo.Size = new Size(103, 61);
@@ -66,7 +67,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(39, 12);
+            label1.Location = new Point(28, 12);
             label1.Name = "label1";
             label1.Size = new Size(127, 20);
             label1.TabIndex = 3;
@@ -75,7 +76,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(39, 93);
+            label2.Location = new Point(217, 12);
             label2.Name = "label2";
             label2.Size = new Size(42, 20);
             label2.TabIndex = 4;
@@ -83,20 +84,32 @@
             // 
             // cadastrarCurso
             // 
-            cadastrarCurso.Location = new Point(58, 267);
+            cadastrarCurso.Location = new Point(168, 102);
             cadastrarCurso.Margin = new Padding(3, 4, 3, 4);
             cadastrarCurso.Name = "cadastrarCurso";
-            cadastrarCurso.Size = new Size(149, 68);
+            cadastrarCurso.Size = new Size(144, 61);
             cadastrarCurso.TabIndex = 5;
             cadastrarCurso.Text = "Cadastrar curso";
             cadastrarCurso.UseVisualStyleBackColor = true;
             cadastrarCurso.Click += cadastrarCurso_Click;
             // 
+            // Voltar
+            // 
+            Voltar.Location = new Point(337, 102);
+            Voltar.Margin = new Padding(3, 4, 3, 4);
+            Voltar.Name = "Voltar";
+            Voltar.Size = new Size(102, 61);
+            Voltar.TabIndex = 6;
+            Voltar.Text = "voltar";
+            Voltar.UseVisualStyleBackColor = true;
+            Voltar.Click += Voltar_Click;
+            // 
             // FrmCadastroPeriodos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(255, 351);
+            ClientSize = new Size(478, 176);
+            Controls.Add(Voltar);
             Controls.Add(cadastrarCurso);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -118,5 +131,6 @@
         private Label label1;
         private Label label2;
         private Button cadastrarCurso;
+        private Button Voltar;
     }
 }
