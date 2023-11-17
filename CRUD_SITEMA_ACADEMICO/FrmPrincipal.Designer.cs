@@ -45,10 +45,9 @@
             // 
             // connectionDatabase
             // 
-            connectionDatabase.Location = new Point(12, 31);
-            connectionDatabase.Margin = new Padding(3, 4, 3, 4);
+            connectionDatabase.Location = new Point(10, 23);
             connectionDatabase.Name = "connectionDatabase";
-            connectionDatabase.Size = new Size(137, 67);
+            connectionDatabase.Size = new Size(120, 50);
             connectionDatabase.TabIndex = 1;
             connectionDatabase.Text = "Conectar no banco";
             connectionDatabase.UseVisualStyleBackColor = true;
@@ -56,9 +55,10 @@
             // 
             // cadastroPeriodo
             // 
-            cadastroPeriodo.Location = new Point(155, 31);
+            cadastroPeriodo.Location = new Point(136, 23);
+            cadastroPeriodo.Margin = new Padding(3, 2, 3, 2);
             cadastroPeriodo.Name = "cadastroPeriodo";
-            cadastroPeriodo.Size = new Size(137, 68);
+            cadastroPeriodo.Size = new Size(120, 51);
             cadastroPeriodo.TabIndex = 2;
             cadastroPeriodo.Text = "Cadastrar periodo";
             cadastroPeriodo.UseVisualStyleBackColor = true;
@@ -66,10 +66,9 @@
             // 
             // cadastroCurso
             // 
-            cadastroCurso.Location = new Point(298, 32);
-            cadastroCurso.Margin = new Padding(3, 4, 3, 4);
+            cadastroCurso.Location = new Point(261, 24);
             cadastroCurso.Name = "cadastroCurso";
-            cadastroCurso.Size = new Size(137, 67);
+            cadastroCurso.Size = new Size(120, 50);
             cadastroCurso.TabIndex = 3;
             cadastroCurso.Text = "Cadastrar curso";
             cadastroCurso.UseVisualStyleBackColor = true;
@@ -77,10 +76,9 @@
             // 
             // cadastroDisciplina
             // 
-            cadastroDisciplina.Location = new Point(12, 106);
-            cadastroDisciplina.Margin = new Padding(3, 4, 3, 4);
+            cadastroDisciplina.Location = new Point(10, 80);
             cadastroDisciplina.Name = "cadastroDisciplina";
-            cadastroDisciplina.Size = new Size(137, 67);
+            cadastroDisciplina.Size = new Size(120, 50);
             cadastroDisciplina.TabIndex = 4;
             cadastroDisciplina.Text = "Cadastrar disciplina";
             cadastroDisciplina.UseVisualStyleBackColor = true;
@@ -88,10 +86,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(155, 106);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(136, 80);
             button1.Name = "button1";
-            button1.Size = new Size(209, 67);
+            button1.Size = new Size(183, 50);
             button1.TabIndex = 5;
             button1.Text = "Adicionar disciplina ao curso";
             button1.UseVisualStyleBackColor = true;
@@ -99,17 +96,16 @@
             // 
             // FrmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(474, 206);
+            ClientSize = new Size(486, 136);
             Controls.Add(button1);
             Controls.Add(cadastroDisciplina);
             Controls.Add(cadastroCurso);
             Controls.Add(cadastroPeriodo);
             Controls.Add(connectionDatabase);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmPrincipal";
-            Text = "Form principal";
+            Text = "CARLOS EDUARDO DOS SANTOS MAGNANI G500DJ4";
             Load += FrmPrincipal_Load;
             ResumeLayout(false);
         }

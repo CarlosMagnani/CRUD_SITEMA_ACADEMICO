@@ -63,5 +63,12 @@ namespace CRUD_SITEMA_ACADEMICO
                 frmPrincipal.Show();
             }
         }
+
+        private void FrmCadastroPeriodos_Load(object sender, EventArgs e)
+        {
+            clsPeriodosDal getData = new clsPeriodosDal();
+            DataTable disciplinaDataTable = getData.getPeriodos();
+            dataGridView1.DataSource = disciplinaDataTable;
+        }
     }
 }

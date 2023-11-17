@@ -35,30 +35,29 @@
             label2 = new Label();
             cadastrarCurso = new Button();
             Voltar = new Button();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // perNome
             // 
-            perNome.Location = new Point(39, 36);
-            perNome.Margin = new Padding(3, 4, 3, 4);
+            perNome.Location = new Point(24, 27);
             perNome.Name = "perNome";
-            perNome.Size = new Size(148, 27);
+            perNome.Size = new Size(130, 23);
             perNome.TabIndex = 0;
             // 
             // perSigla
             // 
-            perSigla.Location = new Point(236, 36);
-            perSigla.Margin = new Padding(3, 4, 3, 4);
+            perSigla.Location = new Point(206, 27);
             perSigla.Name = "perSigla";
-            perSigla.Size = new Size(148, 27);
+            perSigla.Size = new Size(130, 23);
             perSigla.TabIndex = 1;
             // 
             // salvarPeriodo
             // 
-            salvarPeriodo.Location = new Point(39, 102);
-            salvarPeriodo.Margin = new Padding(3, 4, 3, 4);
+            salvarPeriodo.Location = new Point(24, 76);
             salvarPeriodo.Name = "salvarPeriodo";
-            salvarPeriodo.Size = new Size(103, 61);
+            salvarPeriodo.Size = new Size(90, 46);
             salvarPeriodo.TabIndex = 2;
             salvarPeriodo.Text = "Salvar";
             salvarPeriodo.UseVisualStyleBackColor = true;
@@ -67,27 +66,26 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(28, 12);
+            label1.Location = new Point(24, 9);
             label1.Name = "label1";
-            label1.Size = new Size(127, 20);
+            label1.Size = new Size(101, 15);
             label1.TabIndex = 3;
             label1.Text = "Nome do Periodo";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(217, 12);
+            label2.Location = new Point(206, 9);
             label2.Name = "label2";
-            label2.Size = new Size(42, 20);
+            label2.Size = new Size(32, 15);
             label2.TabIndex = 4;
             label2.Text = "Sigla";
             // 
             // cadastrarCurso
             // 
-            cadastrarCurso.Location = new Point(168, 102);
-            cadastrarCurso.Margin = new Padding(3, 4, 3, 4);
+            cadastrarCurso.Location = new Point(120, 76);
             cadastrarCurso.Name = "cadastrarCurso";
-            cadastrarCurso.Size = new Size(144, 61);
+            cadastrarCurso.Size = new Size(126, 46);
             cadastrarCurso.TabIndex = 5;
             cadastrarCurso.Text = "Cadastrar curso";
             cadastrarCurso.UseVisualStyleBackColor = true;
@@ -95,20 +93,29 @@
             // 
             // Voltar
             // 
-            Voltar.Location = new Point(337, 102);
-            Voltar.Margin = new Padding(3, 4, 3, 4);
+            Voltar.Location = new Point(252, 76);
             Voltar.Name = "Voltar";
-            Voltar.Size = new Size(102, 61);
+            Voltar.Size = new Size(89, 46);
             Voltar.TabIndex = 6;
             Voltar.Text = "voltar";
             Voltar.UseVisualStyleBackColor = true;
             Voltar.Click += Voltar_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(17, 168);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(692, 227);
+            dataGridView1.TabIndex = 7;
+            // 
             // FrmCadastroPeriodos
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(478, 176);
+            ClientSize = new Size(751, 421);
+            Controls.Add(dataGridView1);
             Controls.Add(Voltar);
             Controls.Add(cadastrarCurso);
             Controls.Add(label2);
@@ -116,9 +123,10 @@
             Controls.Add(salvarPeriodo);
             Controls.Add(perSigla);
             Controls.Add(perNome);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmCadastroPeriodos";
             Text = "Form1";
+            Load += FrmCadastroPeriodos_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -132,5 +140,6 @@
         private Label label2;
         private Button cadastrarCurso;
         private Button Voltar;
+        private DataGridView dataGridView1;
     }
 }

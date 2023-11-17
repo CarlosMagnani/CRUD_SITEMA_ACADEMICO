@@ -27,7 +27,7 @@ namespace CRUD_SITEMA_ACADEMICO
                 SqlConnection connection = cls_dal.Connection.connection();
                 connection.Close();
 
-                MessageBox.Show("Conexão bem sucedida");
+                MessageBox.Show("Conexï¿½o bem sucedida");
             }
             catch (Exception ex)
             {

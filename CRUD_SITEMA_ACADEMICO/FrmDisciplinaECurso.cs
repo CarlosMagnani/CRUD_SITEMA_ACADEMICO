@@ -24,7 +24,7 @@ namespace CRUD_SITEMA_ACADEMICO
             DataTable infoDisciplinas = getDisciplinas.getDisciplinas();
             clsCursosDal getCursos = new clsCursosDal();
             DataTable infoCursos = getCursos.getCursos();
-            clsDisciplinaECursoDal getDisciplinaECurso =  new clsDisciplinaECursoDal();
+            clsDisciplinaECursoDal getDisciplinaECurso = new clsDisciplinaECursoDal();
             DataTable infoDisECurso = getDisciplinaECurso.getDisciplinaECurso();
 
             dataGridView1.DataSource = infoDisECurso;
@@ -36,6 +36,7 @@ namespace CRUD_SITEMA_ACADEMICO
             discipinaSelect.DataSource = infoDisciplinas;
             discipinaSelect.DisplayMember = "disSigla";
             discipinaSelect.ValueMember = "disid";
+
         }
 
         private void adicionarDisciplina_Click(object sender, EventArgs e)
@@ -49,17 +50,22 @@ namespace CRUD_SITEMA_ACADEMICO
                 clsDisciplinaECursoDal disciplinaECursoDal = new clsDisciplinaECursoDal();
                 disciplinaECursoDal.Inserir(disECursoModel);
 
-                clsDisciplinaECursoDal getDisciplinaECurso = new clsDisciplinaECursoDal();
-                DataTable infoDisECurso = getDisciplinaECurso.getDisciplinaECurso();
+
+                DataTable infoDisECurso = disciplinaECursoDal.getDisciplinaECurso();
 
                 dataGridView1.DataSource = infoDisECurso;
                 MessageBox.Show("Disciplina Adicionada com sucesso");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error:"+ ex.Message);
+                MessageBox.Show("Error:" + ex.Message);
             }
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+         
         }
     }
 }
